@@ -1,19 +1,7 @@
 import React from "react"
 
-export default class TopicsList extends React.Component {
-    constructor(props) {
-        super(props)
+export default ({ topicNames }) => (
+    <div className="topics-list">
 
-        this.state = {
-            topics: []
-        }
-    }
-
-    componentDidMount() {
-
-    }
-
-    render() {
-        const { topics } = this.state
-    }
-}
+    </div>
+)

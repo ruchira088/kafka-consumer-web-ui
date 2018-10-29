@@ -1,6 +1,8 @@
 import React from "react"
 import { uniq, sortBy } from "ramda"
-import {listen} from "./kafka-consumer"
+import { listen } from "./kafkaConsumer"
+import TopicsList from "./TopicsList.jsx"
+import MessagesList from "./MessagesList.jsx"
 
 export default class Application extends React.Component {
     constructor(props) {
@@ -31,11 +33,12 @@ export default class Application extends React.Component {
     }
 
     render() {
-        const {messages, isConnected} = this.state
+        const { messages, isConnected, topicNames } = this.state
 
         return (
             <div className="application">
-
+                <TopicsList topicNames={topicNames}/>
+                <MessagesList messages={messages} isConnected={isConnected}/>
             </div>
         )
 

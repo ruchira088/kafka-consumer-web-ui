@@ -1,0 +1,11 @@
+.message {
+  padding: 1em;
+
+  .message-details {
+    font-family: "Roboto", sans-serif;
+
+    .kv-pair div {
+      display: inline-block;
+    }
+  }
+}
