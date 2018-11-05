@@ -5,9 +5,9 @@ import Application from "./Application.jsx"
 import "./styles/index.scss"
 
 const Index =
-    () =>
+    props =>
         <div className="index-page">
-            <Application/>
+            <Application {...props}/>
         </div>
 
-ReactDOM.render(<Index/>, document.getElementById("application-root"))
+ReactDOM.render(<Index document={document} window={window}/>, document.getElementById("application-root"))

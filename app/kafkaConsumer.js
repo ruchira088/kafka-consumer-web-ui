@@ -10,5 +10,16 @@ export const listen =
         const webSocket = new WebSocket(`ws://${process.env.API_SERVER}/live-messages`)
 
         webSocket.addEventListener("open", onOpen)
-        webSocket.addEventListener("message", ({ data }) => onMessage(JSON.parse(data)))
+        webSocket.addEventListener(
+            "message",
+            ({ data }) => {
+                const message = JSON.parse(data)
+
+                if (message.isHeartBeat === true) {
+                    console.log(message)
+                } else {
+                    onMessage(message)
+                }
+            }
+        )
     }
