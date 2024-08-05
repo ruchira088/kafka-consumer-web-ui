@@ -10,9 +10,9 @@
     "clean": "rm -rf public/dist"
   },
   "dependencies": {
-    "axios": "^0.18.0",
+    "axios": "^0.28.0",
     "classnames": "^2.2.6",
-    "moment": "^2.22.2",
+    "moment": "^2.29.4",
     "ramda": "^0.25.0",
     "react": "^16.6.0",
     "react-dom": "^16.6.0",
@@ -28,11 +28,11 @@
     "babel-preset-react": "^6.24.1",
     "css-loader": "^1.0.0",
     "file-loader": "^2.0.0",
-    "node-sass": "^4.9.4",
+    "node-sass": "^9.0.0",
     "sass-loader": "^7.1.0",
     "style-loader": "^0.23.1",
     "webpack": "^4.23.1",
     "webpack-cli": "^3.1.2",
-    "webpack-dev-server": "^3.1.10"
+    "webpack-dev-server": "^3.1.11"
   }
 }
